@@ -47,7 +47,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: #8980F5 !important;
 			text-decoration: none;
 		}
 
@@ -527,7 +527,7 @@
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 30%;
 		}
 
 			.image.left img, .image.right img {
@@ -546,6 +546,11 @@
 
 		.image.avatar {
 			border-radius: 100%;
+			-webkit-transition: opacity 0.4s ease-in-out;
+		  	-moz-transition: opacity 0.4s ease-in-out;
+		  	-ms-transition: opacity 0.4s ease-in-out;
+		  	-o-transition: opacity 0.4s ease-in-out;
+		  	transition: opacity 0.4s ease-in-out;
 		}
 
 			.image.avatar:before {
@@ -555,6 +560,10 @@
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
+			}
+
+			.image.avatar:hover {
+				opacity: 0.75;
 			}
 
 /* List */
@@ -932,11 +941,11 @@
 
 	#header {
 		background-color: #1f1815;
-		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../images/galaxy.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-attachment: scroll;
+		background-image: url("../images/turquoise-gradient.jpg");
+		background-position: top left;
+		background-repeat: repeat;
+		background-size: auto;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -945,7 +954,6 @@
 		text-align: right;
 		top: 0;
 		width: 35%;
-		opacity: 0.9;
 	}
 
 		#header strong, #header b {
@@ -968,6 +976,14 @@
 			width: 6.25em;
 		}
 
+		#header p {
+			position: relative;
+			text-align: right;
+			margin-left: 25%;
+			color: #ffffff;
+			opacity: 0.8;
+		}
+
 /* Footer */
 
 	#footer {
@@ -984,11 +1000,11 @@
 		}
 
 			#footer .icons a {
-				color: rgba(255, 255, 255, 0.4);
+				color: rgba(255, 255, 255, 0.8);
 			}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.4);
+			color: rgba(255, 255, 255, 0.8);
 			font-size: 0.8em;
 			list-style: none;
 			margin: 1em 0 0 0;
