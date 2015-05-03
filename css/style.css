@@ -465,7 +465,7 @@
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -506,7 +506,7 @@
 
 			.image.thumb:hover:before {
 				background: url("images/overlay.png"), url("images/overlay.png");
-				opacity: 1.0;
+				opacity: 0.5;
 			}
 
 		.image img {
@@ -935,6 +935,7 @@
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
+			letter-spacing: 0.4px;
 		}
 
 /* Header */
