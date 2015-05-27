@@ -1,35 +1,7 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>jennyfromtheweb</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.poptrox.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body id="top">
-
-		<!-- Header -->
-			<header id="header">
-				<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-				<h1><strong>Hi, I'm Jenny. </strong></h1>
-				<p>Aspiring innovator in technology and design. EECS undergrad at UC Berkeley.</p>
-			</header>
+<?php 
+	require_once("inc/config.php");
+	include(ROOT_PATH . "inc/header.php");
+?>
 
 		<!-- Main -->
 			<div id="main">
@@ -41,7 +13,7 @@
 						</header>
 						<p>I am currently an undergraduate studying Electrical Engineering and Computer Science at the University of California, Berkeley. (Go Bears!) My technical interests include UX and UI, human-computer interaction, virtual/augmented reality, and the art of design in general. My non-technical interests include writing, music, film, photography, and social media.</p>
 						<ul class="actions">
-							<li><a href="aboutme.html" class="button">More About Me</a></li>
+							<li><a href="<?php echo BASE_URL; ?>aboutme.php" class="button">More About Me</a></li>
 						</ul>
 					</section>
 
@@ -54,12 +26,6 @@
 								<h3>Big Idea Project: TechSlate</h3>
 								<p>An informational graphic for a proposed education technology device. Created for the UC Berkeley Women in Science 
 								and Engineering academic journal. (2015)</p>
-							</article>
-
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/portfolio/blog-article.png" class="image fit thumb"><img src="images/portfolio/blog-article.png" alt="" /></a>
-								<h3>How Engaging Storytelling Can Improve Your Website</h3>
-								<p>Blog article for Digital-Telepathy's Betterment Blog on the compelling usage of user experience and user interface design in digital storytelling. <a href="http://www.dtelepathy.com/blog/philosophy/how-engaging-storytelling-can-improve-your-website">Read it here.</a> (2013)</p>
 							</article>
 
 							<article class="6u$ 12u$(xsmall) work-item">
@@ -89,19 +55,20 @@
 						</ul> -->
 					</section>
 
+					<section>
+							<h3>Publications</h3>
+							<div class="row">
+								<div class="6u 12u$(xsmall)">
+									<ul class="alt">
+										<li><a href="http://www.dtelepathy.com/blog/philosophy/how-engaging-storytelling-can-improve-your-website">How Engaging Storytelling Can Improve Your Website</a>
+										<p>Betterment Blog, Digital-Telepathy (2013)</p></li>
+										<!-- <li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li> -->
+									</ul>
+								</div>
+
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/jennyzli" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/jennyfromtheweb" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="mailto:jennyli@berkeley.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Jenny Li 2015</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-
-	</body>
-</html>
+<?php
+	include(ROOT_PATH . "inc/footer.php");
+?>
