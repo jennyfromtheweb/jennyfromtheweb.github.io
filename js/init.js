@@ -106,7 +106,7 @@
 		// Main Sections: Two.
 
 			// Lightbox gallery.
-				$('#two').poptrox({
+				$('#pop-up').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
