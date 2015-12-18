@@ -28,6 +28,20 @@
 
 /* Custom
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+
+::selection {
+  background: #E1E1E1; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #E1E1E1; /* Gecko Browsers */
+}
+
+h1, h2, h3 {
+  font-family: 'Lily Script One', cursive;
+  color: #1EAEDB;
+}
+
 .fa {
   padding-right: 20px;
   /*color: #000;*/
@@ -39,6 +53,13 @@
 
 .fr {
   float: right;
+}
+
+.vertical {
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -o-transform: rotate(90deg);
+  margin: 0 auto;
 }
 
 div.portfolio {
@@ -56,58 +77,22 @@ div.portfolio {
   border: 2px solid #EEE;
 }
 
+div.portfolio:hover {
+  border: 2px solid #1EAEDB;
+}
+
 .p1 {
   background: url(../images/portfolio/broadgreen.png);  
   background-size: cover;
 }
-/*.p1:hover {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0),
-      rgba(255, 255, 255, 0.6)
-    ),
-    url(../images/portfolio/broadgreen.png);  
-  background-size: cover;
-}*/
 .p2 {
   background: url(../images/portfolio/bpm.png);  
   background-size: cover;
 }
-/*.p2:hover {
-  background: 
-   linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(255, 255, 255, 0.6)
-    ),url(../images/portfolio/bpm.png);  
-  background-size: cover;
-}*/
 .p3 {
   background: url(../images/portfolio/band-profile.png);  
   background-size: cover;
 }
-/*.p3:hover {
-  background: 
-   linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(255, 255, 255, 0.6)
-    ),url(../images/portfolio/band-profile.png);  
-  background-size: cover;
-}*/
-
-/*.portfolio a {
-  text-transform: uppercase;
-  margin: 0;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  font-size: 2.2rem;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  transform: translate(-50%, -50%);
-}*/
 
 .portfolio p {
   margin: 0;
@@ -117,19 +102,6 @@ div.portfolio {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/*.portfolio:hover  {
-  -o-transition:.3s;
-  -ms-transition:.3s;
-  -moz-transition:.3s;
-  -webkit-transition:.3s;
-  transition:.3s;
-}
-
-.portfolio a:hover {
-  color: #fff;
-  text-decoration: underline;
-}*/
 
 #overlay {
   position: absolute;
@@ -168,6 +140,10 @@ div.portfolio {
   transition-property : opacity;
   transition-duration: 0.4s;
   background-color: #565656;
+
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(20%, #A9A9A9), color-stop(100%, #1EAEDB));
+  background-image: -webkit-linear-gradient(left top, #A9A9A9 20%, #1EAEDB 100%);
+  background-image: linear-gradient(to right bottom, #A9A9A9 20%, #1EAEDB 100%);
 }
 
 .portfolio:hover #overlay {
@@ -181,7 +157,7 @@ div.portfolio {
 }
 
 .portfolio .text {
-  width: 336px;
+  width: 320px;
   height: 50px;
   margin: -32px auto 0px auto;
   text-align: center;
