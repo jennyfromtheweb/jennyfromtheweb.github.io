@@ -20,9 +20,9 @@
   --redaction:    #121319;
 
   /* ---- type ---- */
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body:    'Source Serif 4', Georgia, serif;
-  --font-mono:    'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  --font-display: 'Lexend', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'Roboto Mono', 'SFMono-Regular', Consolas, monospace;
 
   /* ---- layout ---- */
   --maxw: 1280px;
