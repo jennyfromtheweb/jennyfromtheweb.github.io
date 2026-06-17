@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Redesign for JABEL — Jenny Li</title>
+<meta name="description" content="A pro-bono UX overhaul for a grassroots nonprofit, rebuilding its site around survivors, donors, and the people trying to help.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="../index.html">JENNY LI</a>
+    <nav class="site-nav">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#work">← Back to work</a>
+      <div class="case-hero__meta-row" style="margin-top:1.8rem;">
+        <span class="eyebrow">Case 04</span>
+        <span class="eyebrow eyebrow--muted">Nonprofit · Pro Bono</span>
+      </div>
+      <div class="redaction-rule redaction-rule--short" style="margin-bottom: 1.8rem;"></div>
+      <h1 class="case-hero__title">Website Redesign for JABEL</h1>
+      <p class="case-hero__dek">Justice Advocates Battling Exploitation and Lies (JABEL) is a grassroots nonprofit supporting survivors of human trafficking, sexual assault, and domestic abuse. A volunteer UX engagement turned into an ongoing role rebuilding their digital strategy from the ground up.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="case-layout">
+
+      <aside class="case-sidebar">
+        <div class="meta-stamp">
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Role</div>
+            <div class="meta-stamp__value">Volunteer UX Researcher &amp; Designer → Tech &amp; Design Lead</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Org</div>
+            <div class="meta-stamp__value">JABEL, via Taproot Foundation</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Status</div>
+            <div class="meta-stamp__value">Ongoing — build phase in progress</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Methods</div>
+            <ul class="tags">
+              <li class="tag">Heuristic Evaluation</li>
+              <li class="tag">Persona Workshop</li>
+              <li class="tag">Affinity Mapping</li>
+              <li class="tag">Information Architecture</li>
+              <li class="tag">Wireframing</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <article class="case-content">
+
+        <p><strong>JABEL (Justice Advocates Battling Exploitation and Lies)</strong> is a grassroots nonprofit helping survivors of human trafficking, sexual assault, and domestic abuse. It's run almost entirely by its founder, Anabel — I connected with her after signing up to volunteer my UX skills through the Taproot platform. She needed help restructuring and redesigning the JABEL website to bring more awareness to survivors and deepen engagement with sponsors, donors, and volunteers.</p>
+        <p>The redesign unfolded in six phases: a UX audit, defining personas, prioritizing key jobs-to-be-done, defining the information architecture, building wireframes, and — currently underway — building the site itself.</p>
+
+        <div class="outcome-banner" style="margin-top:2.4rem;">
+          <span class="eyebrow">Impact</span>
+          <h2>From a scoped favor to an ongoing role.</h2>
+          <p>The original ask was narrower — reorganize the IA, build some wireframes. But the working relationship with Anabel grew, and I'm now JABEL's <strong>Tech and Design Lead.</strong> In just a few weeks, a first-principles approach — asking the right questions to figure out what actually mattered — brought real clarity to JABEL's digital strategy, centered on what the people visiting this site actually need.</p>
+        </div>
+
+        <h2>Phase 1 — UX Audit &amp; Evaluation</h2>
+        <p>Before touching the redesign, I audited the existing site for friction. Beyond the usability issues, the biggest gap I flagged to Anabel was this: <strong>JABEL's impact wasn't clearly demonstrated anywhere on the site</strong> — which made it harder for both survivors and potential donors to fully trust the organization.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/heuristic-evaluation-notes.webp" alt="Heuristic evaluation notes annotated over screenshots of the existing JABEL website, flagging issues like an unnecessary welcome pop-up, unclear call-to-action wording, a chatbot of uncertain value, and a media page that functions more like an About page.">
+          <figcaption><span class="fig-num">FIG. 01</span>Heuristic evaluation notes on the existing site — from an unnecessary entry pop-up to a donation flow that buried its own call to action.</figcaption>
+        </figure>
+
+        <h2>Phase 2 — Defining the Personas</h2>
+        <p>Before touching content or page structure, I wanted us aligned on who actually visits this site and what they're trying to do. I ran a persona-definition workshop with Anabel covering four groups: <strong>Survivor, Donor, Volunteer, and Partner.</strong> Anabel is a survivor herself, and has also occupied each of the other three roles — so rather than running a full round of discovery interviews, a focused workshop was the right-sized method given the timeline and how much she already knew firsthand.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/persona-survivor.webp" alt="Persona card for The Survivor: currently or has been a victim of human trafficking, sexual assault, and/or domestic violence; seeking immediate resources, support, and a safe path forward, but cautious and easily overwhelmed.">
+          <figcaption><span class="fig-num">FIG. 02</span>The Survivor — determined to change their situation, but cautious, and easily overwhelmed by anything that feels bureaucratic or unsafe.</figcaption>
+        </figure>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/persona-donor.webp" alt="Persona card for The Donor: an individual or company representative who wants an easy, secure way to give, and needs to see clear evidence of impact before trusting the organization with payment information.">
+          <figcaption><span class="fig-num">FIG. 03</span>The Donor — empathetic and conscientious, but won't give without clear evidence the money goes somewhere real.</figcaption>
+        </figure>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/persona-volunteer.webp" alt="Persona card for The Volunteer: eager to contribute time and skills to a mission-driven organization, but uncertain how best to get involved or how much time it will take.">
+          <figcaption><span class="fig-num">FIG. 04</span>The Volunteer — motivated, but needs a clear, low-friction path into actually helping.</figcaption>
+        </figure>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/persona-partner.webp" alt="Persona card for The Partner: a representative from another organization working in the same cause area, looking to confirm JABEL's credibility and start a conversation about collaboration.">
+          <figcaption><span class="fig-num">FIG. 05</span>The Partner — exploratory, looking to confirm credibility before proposing a collaboration.</figcaption>
+        </figure>
+
+        <h2>Phase 3 — Prioritizing Key Jobs-to-Be-Done</h2>
+        <p>With the personas settled, I led a brainstorm with Anabel to define and categorize each one's goals and key tasks, then used affinity mapping to group them — and those groups started taking the shape of actual website sections. I deliberately avoided splitting everything strictly by persona, since some needs — like establishing credibility through visible impact — cut across all four.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/goals-tasks-affinity-map.webp" alt="Affinity map clustering goals and tasks into groups: About JABEL, Survivor Resources, Ways to Contribute, and Establishing Credibility, with starred items marking top priorities.">
+          <figcaption><span class="fig-num">FIG. 06</span>Affinity-mapped goals and tasks, already taking the shape of future site sections.</figcaption>
+        </figure>
+
+        <p>From there, everything went into a spreadsheet to prioritize — the basis for the information architecture that followed.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/jtbd-prioritization-table.webp" alt="Spreadsheet prioritizing goals and tasks by P0, P1, P2, mapped against primary personas (Survivor, Donor, Volunteer, Partner) and category, such as About, Seek Support, Impact, Donate, and Events.">
+          <figcaption><span class="fig-num">FIG. 07</span>Goals and tasks prioritized by urgency (P0–P2) and mapped to the personas they serve.</figcaption>
+        </figure>
+
+        <h2>Phase 4 — Defining the Information Architecture</h2>
+        <p>With everything listed and prioritized, the IA came together quickly. The real decisions were about what deserved to be a top-level page, and how the parent-child relationships should work.</p>
+
+        <h3>Key decisions &amp; recommendations</h3>
+        <ul>
+          <li>Lead the front page with JABEL's focus on <strong>thriving</strong>, not just surviving — helping people not only get out of harm but build a life they actually control. It's what sets JABEL apart from other organizations in this space.</li>
+          <li><strong>Be specific</strong> — survivor resources on the front page, measurable impact, real survivor stories and quotes. Specificity builds trust, for survivors and donors alike.</li>
+          <li>Emphasize the crisis hotline and exactly how to use it — call or text, and a real person on the other end, not an automated system. That reassurance matters as much as the number itself.</li>
+          <li>Give <strong>Donate</strong> its own top-level page, reachable from anywhere — especially once there's content explaining what a donation actually funds.</li>
+        </ul>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/ia-sitemap.webp" alt="Sitemap with Home at the top, branching into About JABEL (Our Story, Our Impact, Media & News), Survivor Support (Crisis Hotline, Resources, Submit a Report), Donate, Get Involved (Events, Volunteer, Partner), and Contact Us.">
+          <figcaption><span class="fig-num">FIG. 08</span>The resulting information architecture — five top-level sections, each scoped to a clear job.</figcaption>
+        </figure>
+
+        <h2>Phase 5 — Creating Wireframes</h2>
+        <p>Before wireframing, I did a light competitive scan of other nonprofit sites — using Gemini to surface examples that included a crisis hotline, to see how they guided someone from the homepage to actually picking up the phone.</p>
+
+        <div class="fig-pair">
+          <figure class="fig">
+            <img src="../assets/images/jabel/homepage-wireframe.webp" alt="Homepage wireframe with a hero section reading 'Ending Lies & Empowering Lives,' a crisis hotline banner, Our Mission and Resources We Provide sections, a survivor quote, and a sponsors strip.">
+            <figcaption><span class="fig-num">FIG. 09</span>Home</figcaption>
+          </figure>
+          <figure class="fig">
+            <img src="../assets/images/jabel/about-jabel-wireframe.webp" alt="About JABEL wireframe with a mission statement, a 'Beyond surviving, we focus on thriving' section, the founder's story with an embedded video, an impact metric, and a Media & News section.">
+            <figcaption><span class="fig-num">FIG. 10</span>About JABEL</figcaption>
+          </figure>
+        </div>
+        <div class="fig-pair">
+          <figure class="fig">
+            <img src="../assets/images/jabel/survivor-support-wireframe.webp" alt="Survivor Support wireframe with a prominent crisis hotline section reading 'If you need help, we're here for you,' call and text buttons, and additional resource cards for housing, legal support, reporting a crime, and sharing a story.">
+            <figcaption><span class="fig-num">FIG. 11</span>Survivor Support</figcaption>
+          </figure>
+          <figure class="fig">
+            <img src="../assets/images/jabel/donate-wireframe.webp" alt="Donate wireframe with a 'Join Us in Making a Difference' headline and a donation form offering one-time or monthly giving at preset amounts of $25, $50, or $100.">
+            <figcaption><span class="fig-num">FIG. 12</span>Donate</figcaption>
+          </figure>
+        </div>
+
+        <h2>Phase 6 — Building the Website <span style="font-style:italic;">(in progress)</span></h2>
+        <p>JABEL is moving off its current hosting service, and I'm currently evaluating where to land — weighing how lightweight it is to maintain technically, how much flexibility it gives on visual design, and how well it handles heavy text content for a future blog. Here's an early snippet of the site I'm prototyping in Canva. More to come.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/jabel/canva-prototype-hero.webp" alt="High-fidelity homepage prototype in Canva, with the headline 'Ending Lies to Empowering Lives' over a photo, mission copy, a crisis hotline banner, an Our Mission section with a survivor quote, and a sponsors strip.">
+          <figcaption><span class="fig-num">FIG. 13</span>An early high-fidelity prototype of the new homepage, built in Canva.</figcaption>
+        </figure>
+
+      </article>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <nav class="case-pagenav">
+      <div>
+        <span class="eyebrow">Previous — Case 03</span>
+        <a href="nhi-research.html">← Non-Human Identities Research</a>
+      </div>
+      <div class="case-pagenav__next">
+        <span class="eyebrow">Back to start</span>
+        <a href="../index.html#work">All case studies →</a>
+      </div>
+    </nav>
+  </div>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__block">
+        <strong>Get in touch</strong>
+        <div class="footer__links">
+          <a href="mailto:jennyfromtheweb@gmail.com">jennyfromtheweb@gmail.com</a>
+          <a href="https://linkedin.com/in/jennyzli" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="footer__block">
+        <strong>Other Work</strong>
+        <div class="footer__links">
+          <a href="https://asiablooming.com/author/jenny/" target="_blank" rel="noopener">Writing — Asia Blooming ↗</a>
+          <a href="https://kpopconcerts.com/author/jennyl/" target="_blank" rel="noopener">Writing — K-Pop Concerts ↗</a>
+          <a href="https://www.operationshamrock.org/blog/how-scammers-get-your-personal-data" target="_blank" rel="noopener">Writing — Operation Shamrock ↗</a>
+          <a href="https://jennyfromtheweb.myportfolio.com/" target="_blank" rel="noopener">Photography Portfolio ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Jenny Li</span>
+      <span>Built &amp; hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

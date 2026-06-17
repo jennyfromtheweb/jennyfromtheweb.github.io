@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubrik SaaS Zero-to-One Research — Jenny Li</title>
+<meta name="description" content="Zero-to-one discovery and evaluative research that defined how Rubrik protects SaaS data, starting with Atlassian JIRA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="../index.html">JENNY LI</a>
+    <nav class="site-nav">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#work">← Back to work</a>
+      <div class="case-hero__meta-row" style="margin-top:1.8rem;">
+        <span class="eyebrow">Case 01</span>
+        <span class="eyebrow eyebrow--muted">Enterprise SaaS · Rubrik</span>
+      </div>
+      <div class="redaction-rule redaction-rule--short" style="margin-bottom: 1.8rem;"></div>
+      <h1 class="case-hero__title">Rubrik SaaS Zero-to-One Research</h1>
+      <p class="case-hero__dek">An end-to-end research study — spanning discovery, concept testing, and usability evaluation — that set the foundation for SaaS data protection in Rubrik Security Cloud, starting with Atlassian JIRA.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="case-layout">
+
+      <aside class="case-sidebar">
+        <div class="meta-stamp">
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Role</div>
+            <div class="meta-stamp__value">Sole Researcher</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Team</div>
+            <div class="meta-stamp__value">1 PM · 1 Designer · 1 Lead Engineer</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Scope</div>
+            <div class="meta-stamp__value">Multi-month, 2 phases</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Methods</div>
+            <ul class="tags">
+              <li class="tag">Card Sorting</li>
+              <li class="tag">Concept Testing</li>
+              <li class="tag">Usability Testing</li>
+              <li class="tag">Interviews</li>
+              <li class="tag">Strategy</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <article class="case-content">
+
+        <p>With the growth of cloud products in the IT world, Rubrik began expanding its services to include data protection for SaaS software, starting with Atlassian's JIRA. While Rubrik's user persona had traditionally been the backup admin, we hypothesized that specialized SaaS products would actually be owned by a different, dedicated role — and we'd need to understand that user's needs to build the right product. As the sole researcher, I planned a zero-to-one study spanning discovery interviews, concept testing, and usability testing, so the team could confidently define an MVP for this new offering.</p>
+
+        <h2>Research Objectives</h2>
+        <p>We needed to test our hypothesis about who actually owns JIRA workloads, and understand how — if at all — they were protecting that data today. Backup and recovery are the two core tasks of any data-protection product, so it was critical to pin down expectations for both.</p>
+        <ul>
+          <li><strong>Identify and understand the persona(s) responsible for Atlassian workloads</strong> — who creates the backup policies? Who recovers JIRA data? How do they protect it today, and what's hard about that?</li>
+          <li><strong>Understand how users want to back up the different components in JIRA</strong> — what data types, at what granularity, at what frequency?</li>
+          <li><strong>Understand how users want to recover those components</strong> — how do they initiate recovery, what options do they need, at what granularity?</li>
+        </ul>
+
+        <h2>Phase 1 — Discovery Research</h2>
+
+        <h3>Kick-off &amp; framing</h3>
+        <p>Like all my research projects, this began with a kickoff alongside the PM and designer — drafting business goals, research goals, hypotheses, recruitment plans, and a timeline together over a video call. During that conversation I learned the team was considering a new information architecture, so I proposed a mixed-method approach: card sorting to understand users' mental model of JIRA's components, plus a round of concept testing to weigh the existing IA against the proposed one.</p>
+
+        <h3>Internal expert interview &amp; recruitment</h3>
+        <p>I started by interviewing our own internal JIRA admin, with the PM and designer on the call, to build an initial picture of the space. Recruiting external participants was harder — this was a persona we'd never directly engaged before. I drew from our existing research panel and posted a callout on the Atlassian developer forums. Participants mostly came from technology and IT — companies where JIRA downtime has real business consequences — ranging from mid-size to large enterprises.</p>
+
+        <h3>Unmoderated card sorting</h3>
+        <ul>
+          <li>Conducted via UXTweak, in a hybrid format (predefined categories, plus room for participants to add their own)</li>
+          <li>12 participants</li>
+          <li>Data collected from UXTweak and analyzed in Google Sheets via heat-mapping</li>
+        </ul>
+
+        <h3>Customer interviews &amp; concept testing</h3>
+        <p>This phase made up the bulk of the study:</p>
+        <ul>
+          <li>1-hour Zoom sessions — 30–40 minutes semi-structured interview, 20–30 minutes concept testing</li>
+          <li>Within-subject testing across two designs (new IA vs. old IA), counterbalanced</li>
+          <li>5 current Rubrik customers, 4 non-Rubrik customers</li>
+          <li>Recordings tagged and analyzed in Dovetail</li>
+        </ul>
+
+        <h2>Research Insights</h2>
+        <p>Findings and recommendations went out via a slide deck — first to product and design stakeholders, then an abbreviated version to engineering, to help that team understand the "why" behind what we were building.</p>
+
+        <h3>High-level findings</h3>
+        <p>Because this study ventured into territory the company knew little about, it mattered just as much to paint the bigger picture — the persona, the landscape — as it did to land specific recommendations.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-saas/state-of-jira-customers-today.webp" alt="Slide titled 'The State of JIRA for Customers Today' listing how customers currently protect JIRA data, including Atlassian's trash and data resilience policy, manual zip backups, and restricted permissions.">
+          <figcaption><span class="fig-num">FIG. 01</span>Laying out how customers protect JIRA today gave stakeholders a baseline for how Rubrik's offering could directly address existing gaps.</figcaption>
+        </figure>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-saas/persona-jerry-jira-admin.webp" alt="Persona card for 'Jerry the JIRA Admin' outlining his relevant roles, goal, key responsibilities, and frustrations with current backup options.">
+          <figcaption><span class="fig-num">FIG. 02</span>"Jerry the JIRA Admin" — a persona card outlining this user's goals, key responsibilities, and frustrations.</figcaption>
+        </figure>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-saas/top-use-cases.webp" alt="Table mapping JIRA admin user stories to specific use cases, such as restoring a project before deletion or comparing snapshots across time.">
+          <figcaption><span class="fig-num">FIG. 03</span>Top use cases uncovered by the research, paired with audio soundbites of users describing real scenarios (denoted by the speaker icons).</figcaption>
+        </figure>
+
+        <h3>Card-sorting findings</h3>
+        <p>A pivot-table heat map in Google Sheets showed where users agreed — and disagreed — on how to categorize each JIRA component. The cards with the most disagreement (highlighted) were mostly components tied to both settings and projects, so they naturally spanned both categories.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-saas/card-sorting-heatmap.webp" alt="Heat map pivot table showing how 9 participants categorized JIRA components like Issues, Workflows, and Permission Schemes across categories such as Global Settings, Issues, and Projects.">
+          <figcaption><span class="fig-num">FIG. 04</span>Heat map of card-sorting results. Darker cells mark stronger consensus; lighter, scattered cells flag components without a clear mental-model home.</figcaption>
+        </figure>
+
+        <h3>Concept testing findings</h3>
+        <p>The biggest change on the table was a shift from an object-focused information architecture to a task-focused one. The card sort had already hinted that some components lacked a clear category — suggesting users might struggle to locate them in an object-focused experience. I wanted to test the viability of a task-focused alternative, letting JIRA admins jump straight into a workflow based on what they're trying to accomplish, rather than hunting for the object first.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-saas/nav-option-comparison.webp" alt="Two navigation bar mockups side by side: Option 1, task-focused, with tabs Dashboard, Backup, Restore, Events; Option 2, object-focused, with tabs Dashboard, Projects, Settings, Events.">
+          <figcaption><span class="fig-num">FIG. 05</span>The two navigation concepts tested: task-focused (left) vs. object-focused (right).</figcaption>
+        </figure>
+
+        <p>I kept the concept tests focused on high-level IA and navigation rather than specific workflows — asking where users expected to recover different components (Projects, Issues, Workflows) and where to create backup policies. Each session ended by asking users which design they preferred, not just to tally votes, but to understand what worked — and didn't — about each.</p>
+
+        <h3>Key findings</h3>
+        <figure class="fig">
+          <img src="../assets/images/rubrik-saas/task-vs-object-focused-findings.webp" alt="Comparison list: Task-Focused design succeeded on overall IA and the Restore tab but needed work on the Backup tab; Object-Focused design succeeded on project drilldown but failed on Settings, restoring configurations, and managing backup policies.">
+          <figcaption><span class="fig-num">FIG. 06</span>Task-focused vs. object-focused: where each design succeeded, and where it broke down.</figcaption>
+        </figure>
+
+        <h3>Summary</h3>
+        <p>JIRA's ecosystem is heavily relational — a change to one object can ripple into many others. As a result:</p>
+        <ul>
+          <li>Users' mental categorization of data types isn't well defined</li>
+          <li>Admins may not know the full scope of impact when a change or deletion occurs</li>
+          <li>Recovery is often a complex process involving more than one data type</li>
+          <li>Admins are wary of conflicts arising from a restore, and want assurance of exactly what will change</li>
+        </ul>
+
+        <h3>Recommendations</h3>
+        <ul>
+          <li>Take a <strong>task-focused</strong> approach to the SaaS admin information architecture</li>
+          <li>Let admins <strong>view backup successes and failures at a glance</strong>, and <strong>view the SLA</strong> assigned to any given project</li>
+          <li>Help admins determine what to recover via <strong>object-attribute search</strong> and <strong>point-in-time snapshot comparison</strong></li>
+          <li>Allow flexibility to <strong>customize additional policies</strong> on top of an overall site policy</li>
+        </ul>
+
+        <div class="outcome-banner">
+          <span class="eyebrow">Product Impact — Phase 1</span>
+          <h2>SaaS workloads got their own room.</h2>
+          <p>Working alongside the PM, designer, and lead engineer over the following weeks, we landed on splitting all SaaS workloads into a dedicated space within the Rubrik application — rather than folding them into traditional backup workflows — with an IA built to scale to future SaaS integrations beyond JIRA.</p>
+        </div>
+
+        <div class="fig-pair">
+          <figure class="fig">
+            <img src="../assets/images/rubrik-saas/slack-eng-endorsement.webp" alt="Slack message from an engineer saying 'Great presentation! Was super impressed,' with Jenny Li replying 'thanks! hope it was helpful for the team.'">
+            <figcaption><span class="fig-num">FIG. 07</span>Feedback from the engineering share-out.</figcaption>
+          </figure>
+          <figure class="fig">
+            <img src="../assets/images/rubrik-saas/slack-pm-endorsement.webp" alt="Slack message from the PM thanking Jenny Li for driving the research, noting the insights helped make directional decisions.">
+            <figcaption><span class="fig-num">FIG. 08</span>Follow-up from the PM, months later.</figcaption>
+          </figure>
+        </div>
+
+        <h2>Phase 2 — Evaluative Research</h2>
+        <p>With the design taking shape, I planned a second phase: usability testing across the main flows — Recovery, Analysis, and Backup. Each needed more than a typical one-hour session, so I ran two 1-hour sessions per participant. To recruit, I created a "JIRA Specialist Cohort" — a mix of returning and new participants invited into a more selective, multi-session group, each session closing with a System Usability Scale (SUS) survey.</p>
+
+        <h3>Session 1 — Recovery &amp; Analysis</h3>
+        <p class="eyebrow eyebrow--muted" style="display:block; margin-bottom: 0.8rem;">Objectives: recovering multiple issues, recovering a setting, and using Analyze to investigate a point-in-time problem.</p>
+
+        <div class="callout">
+          <span class="eyebrow">Task 1 — Recover Multiple Issues</span>
+          <p>"Imagine a colleague hands you a list of 5 JIRA tickets that need to be restored to a previous state. How would you do this in Rubrik?"</p>
+        </div>
+        <div class="callout">
+          <span class="eyebrow">Task 2 — Analyze &amp; Identify Issues</span>
+          <p>"It's the end of January. A colleague accidentally made a bulk change and is now missing almost a dozen issues from the current sprint — he knows it happened in the last couple of days, but not which issues were affected. How would you help him identify and restore them?"</p>
+        </div>
+        <div class="callout">
+          <span class="eyebrow">Task 3 — Recover a Setting</span>
+          <p>"You experimented with changes to several JIRA workflows recently, but need to revert — and never saved a copy in JIRA itself. What would you do?"</p>
+        </div>
+
+        <h3>Session 2 — Onboarding &amp; Backup</h3>
+        <p class="eyebrow eyebrow--muted" style="display:block; margin-bottom: 0.8rem;">Objectives: first-time setup, monitoring the dashboard, and troubleshooting backup errors.</p>
+
+        <div class="callout">
+          <span class="eyebrow">Task 1 — Set Up Environment</span>
+          <p>"You're Jerry the JIRA admin, setting up JIRA data protection in Rubrik for the first time. After talking with your team, you decide to back up two JIRA sites every 12 hours."</p>
+        </div>
+        <div class="callout">
+          <span class="eyebrow">Task 2 — Monitor the Dashboard</span>
+          <p>"A few days later, you return to confirm your backups succeeded. What do you see, and what would you do next? Now take an on-demand backup to cover one that failed."</p>
+        </div>
+        <div class="callout">
+          <span class="eyebrow">Task 3 — Troubleshoot Backup Errors</span>
+          <p>"Some backups are failing and you need to find out why. Where do you go?"</p>
+        </div>
+
+        <h3>Research insights</h3>
+        <p>Since I'd worked closely with the PM and designer throughout, I ran the share-out as an interactive FigJam session rather than a static deck — screenshotting each step of the flow and annotating it with friction points and user quotes, color-coded by type (question, recommendation, discussion point, resolution). I walked through each flow live, facilitating discussion and capturing notes in real time. As with Phase 1, I followed with a shorter, more technical share-out for engineering.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-saas/figjam-annotated-review.webp" alt="Annotated FigJam board reviewing Onboarding, Monitor, and Analyze v2 mockups with color-coded sticky notes for questions, recommendations, and user quotes.">
+          <figcaption><span class="fig-num">FIG. 09</span>The annotated FigJam review used to facilitate the Phase 2 share-out.</figcaption>
+        </figure>
+
+        <div class="outcome-banner">
+          <span class="eyebrow">Product Impact — Phase 2</span>
+          <h2>A clearer MVP, and a reusable foundation.</h2>
+          <p>Evaluative research surfaced what worked well (onboarding), what caused confusion (dashboard stats), and what had high potential but needed more capability (Analyze). After several rounds of cross-functional discussion, the PM narrowed the MVP to the features most likely to move the needle for users. The product is now in beta — and the team is reusing the same information architecture and UX principles as it builds protection for additional SaaS applications.</p>
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <nav class="case-pagenav">
+      <div></div>
+      <div class="case-pagenav__next">
+        <span class="eyebrow">Next — Case 02</span>
+        <a href="rubrik-admin-diary-study.html">Rubrik Admin Diary Study →</a>
+      </div>
+    </nav>
+  </div>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__block">
+        <strong>Get in touch</strong>
+        <div class="footer__links">
+          <a href="mailto:jennyfromtheweb@gmail.com">jennyfromtheweb@gmail.com</a>
+          <a href="https://linkedin.com/in/jennyzli" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="footer__block">
+        <strong>Other Work</strong>
+        <div class="footer__links">
+          <a href="https://asiablooming.com/author/jenny/" target="_blank" rel="noopener">Writing — Asia Blooming ↗</a>
+          <a href="https://kpopconcerts.com/author/jennyl/" target="_blank" rel="noopener">Writing — K-Pop Concerts ↗</a>
+          <a href="https://www.operationshamrock.org/blog/how-scammers-get-your-personal-data" target="_blank" rel="noopener">Writing — Operation Shamrock ↗</a>
+          <a href="https://jennyfromtheweb.myportfolio.com/" target="_blank" rel="noopener">Photography Portfolio ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Jenny Li</span>
+      <span>Built &amp; hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

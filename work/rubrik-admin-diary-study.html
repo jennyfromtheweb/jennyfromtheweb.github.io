@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubrik Admin Diary Study — Jenny Li</title>
+<meta name="description" content="A multi-week diary study uncovering the daily rhythms, rituals, and friction points of a backup admin's workday.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="../index.html">JENNY LI</a>
+    <nav class="site-nav">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <div class="wrap">
+      <a class="back-link" href="../index.html#work">← Back to work</a>
+      <div class="case-hero__meta-row" style="margin-top:1.8rem;">
+        <span class="eyebrow">Case 02</span>
+        <span class="eyebrow eyebrow--muted">Enterprise SaaS · Rubrik</span>
+      </div>
+      <div class="redaction-rule redaction-rule--short" style="margin-bottom: 1.8rem;"></div>
+      <h1 class="case-hero__title">Rubrik Admin Diary Study</h1>
+      <p class="case-hero__dek">Uncovering a backup admin's day-to-day journey — and what they actually do with Rubrik once onboarding is over — through a three-week diary study.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="case-layout">
+
+      <aside class="case-sidebar">
+        <div class="meta-stamp">
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Role</div>
+            <div class="meta-stamp__value">Sole Researcher</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Duration</div>
+            <div class="meta-stamp__value">3 weeks (15 workdays)</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Participants</div>
+            <div class="meta-stamp__value">9, across the US, UK, Belgium &amp; Sweden</div>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Methods</div>
+            <ul class="tags">
+              <li class="tag">Diary Study</li>
+              <li class="tag">Journey Mapping</li>
+            </ul>
+          </div>
+          <div class="meta-stamp__row">
+            <div class="meta-stamp__label">Read more</div>
+            <div class="meta-stamp__value"><a href="https://medium.com/rubrik-design/uncovering-a-backup-admins-journey-through-a-diary-study-user-research-case-study-ad9beb2812ef" target="_blank" rel="noopener" style="color:var(--indigo);">Original write-up on Rubrik's design blog ↗</a></div>
+          </div>
+        </div>
+      </aside>
+
+      <article class="case-content">
+
+        <p>At Rubrik, the User Research team is driven by user insight to build better products. For one of Rubrik's core products, SLA domains, we understood how users set things up — but we knew much less about how they lived with the product afterward. What are their key tasks day to day? How do they behave? What trips them up? To find out, I launched a discovery project to map the daily activities of the backup admins using Rubrik — what I came to think of as the <strong>Day 2 Customer Journey</strong>.</p>
+        <p>This was the first time our research team had used a diary study at Rubrik, which made it a chance to build foundational research <em>and</em> greater empathy for our users across the company at the same time.</p>
+
+        <h2>The Research Methodology</h2>
+        <p>Since we wanted to explore behavior remotely, over multiple days, a <strong>diary study</strong> was the clear choice — it captures qualitative behavior by having participants record their activities each day over a period of time. It gives you both the breadth of a longitudinal study and the depth of individual participant responses, which makes it ideal for building out a persona's journey.</p>
+        <p>Because the scope was broad, I first interviewed internal experts — Sales Engineers, Technical PMs, and Customer Success Engineers who are on the front line with customers — plus 3 customers in senior or management roles, to identify which categories of tasks and challenges mattered most. That gave me five areas to probe in the diary itself: <strong>Maintenance, Monitoring, Reporting, Troubleshooting, and Optimization.</strong></p>
+
+        <h2>Planning the Diary Study</h2>
+        <p>Diary studies run longer and bigger than most research methods, so the logistics matter — the smoother the schedule, the less you have to manage by hand later.</p>
+
+        <h3>Length</h3>
+        <p>Based on prior research and tribal knowledge, we hypothesized that most backup admins follow a daily routine, occasionally interrupted by unexpected incidents. Three weeks (15 workdays) felt like enough time to surface real habits and usage scenarios.</p>
+
+        <h3>Timing of the prompt</h3>
+        <p>Backup admins are busy, and I didn't want to interrupt them mid-incident and risk a missed response. Instead, I scheduled the daily prompt near the end of each participant's workday, in their own timezone, using Gmail's "Schedule Send."</p>
+
+        <h3>Diary medium</h3>
+        <p>I chose a Google Form — familiar, accessible, and able to take text, photos, screenshots, video, or audio. In the last few days, I gave participants the option to record an audio note instead of writing. I hadn't planned for audio originally, but it turned out to be a favorite among participants who preferred talking about their day — and hearing their actual voices made the responses more natural and personal. It's a technique I'll build in from day one next time.</p>
+
+        <h3>Diary questions</h3>
+        <p>Each day's form opened broadly — "walk me through your day" — then narrowed into the five categories from the first research phase. Many questions repeated daily on purpose, so we could track how (or whether) answers changed over time. I also slipped in a few just-for-fun questions, like picking an emoji for how they were feeling, to help people loosen up and tap into how they actually felt, not just what they did.</p>
+
+        <h3>Recruiting</h3>
+        <p>Since a diary study is a record of daily activity, I recruited people who use Rubrik nearly every day — mostly Backup Admins, though many also wear Cloud Admin or Security Admin hats these days. In total: 9 participants across the US, UK, Belgium, and Sweden; industries spanning manufacturing, education, and IT tools; company sizes from under 100 to over 50,000 employees. Everyone received a monetary incentive and confirmed they could commit to the full three weeks.</p>
+        <p>One thing I'd consider differently next time: a customer's <em>stage of life</em> with the product. Someone a few months into using Rubrik interacts with it very differently than someone who's settled into steady-state maintenance.</p>
+
+        <h3>Staying in touch</h3>
+        <p>It mattered that participants felt a personal connection to the study, so their answers stayed reflective rather than perfunctory. I sent everyone a one-pager on the project, held an intro call to explain things and get to know them, and scheduled a closing call after the final day to follow up on anything open.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-diary/diary-form-google-form.webp" alt="Section of the daily diary Google Form, asking questions like whether the participant needed to look up information in Rubrik, generated any reports, or troubleshot errors that day.">
+          <figcaption><span class="fig-num">FIG. 01</span>Screenshot of a section of questions from the diary form.</figcaption>
+        </figure>
+
+        <h2>Running the Diary Study</h2>
+        <p>My manager gave me one piece of advice before this started: don't wait until the end to begin analysis. So every day, I read the previous day's entries, tagging them as I went — turning a pile of raw data into something I could actually keep up with, and letting me follow up with participants quickly if I needed more detail. I compiled every entry into a single spreadsheet, tagging each response as it came in.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-diary/diary-responses-spreadsheet.webp" alt="Spreadsheet of tagged diary study responses, with columns for tags, what a typical day looked like, and how participants interacted with Rubrik Security Cloud.">
+          <figcaption><span class="fig-num">FIG. 02</span>Daily entries compiled and tagged in a running spreadsheet — the raw material behind every pattern that followed.</figcaption>
+        </figure>
+
+        <p>It only took a few days for patterns to surface. Almost every backup admin started their morning by checking on overnight backups and triaging requests from colleagues — and what greeted them there shaped the rest of their day. No pressing issues meant time for maintenance or exploring a new feature; a real issue meant the whole day went to investigation and remediation.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-diary/day2-customer-experience-journey.webp" alt="Journey map titled 'The Day 2 Customer Experience' spanning five stages — Monitor, Remediate, Protect, Discover, Calculate — with touchpoints, actions, and embedded audio quote icons for each stage.">
+          <figcaption><span class="fig-num">FIG. 03</span>An excerpt of the journey map, with embedded audio soundbites (the speaker icons) used in the final research share-out.</figcaption>
+        </figure>
+
+        <p>Some participants described working through the same problem over several days — leaning on past experience, teammates, or Rubrik support to troubleshoot. <strong>It was clear the product itself didn't offer enough guidance to resolve issues on its own.</strong> We'd heard about bugs in interview sessions before, but reading about one unfold in near-real-time, over days, was a different — and more visceral — kind of evidence.</p>
+        <p>The diary also gave us a zoomed-out view of how Rubrik fits into a backup admin's broader toolkit. <strong>Across customers, Rubrik was just one piece of an extensive IT ecosystem — but a vital one.</strong> I came away with a real sense of how busy and complicated this job can be: hopping between tools, juggling teammates, occasionally firefighting after hours. Multiple participants said what they valued most about Rubrik was how it turned hard tasks into simple, manageable ones — especially compared to whatever they'd used before.</p>
+
+        <blockquote class="pull">
+          "That's what I like about Rubrik — you don't need to spend too much time on it."
+          <cite>Diary study participant</cite>
+        </blockquote>
+
+        <p>It wasn't an insight specific to SLAs or backups — but it was a golden nugget that named exactly what customers valued about Rubrik relative to other backup products: time and effort saved.</p>
+
+        <h2>Data Synthesis &amp; Deliverables</h2>
+        <p>After the closing calls, it was time to make sense of everything. Working in FigJam, I clustered notes into Jobs-to-be-Done — paired with the personas who held them — alongside feature-specific findings and a map of the other IT tools in admins' lives.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-diary/figjam-findings-synthesis.webp" alt="FigJam board clustering research findings into Jobs-to-be-Done by persona (Backup Admin, Cloud Admin, Backup Operations Engineer, Security Admin), plus feature-specific findings for Reporting and Dashboards, and a map of other IT tools.">
+          <figcaption><span class="fig-num">FIG. 04</span>Work-in-progress synthesis in FigJam — findings, personas, and JTBD clusters taking shape.</figcaption>
+        </figure>
+
+        <p>From there I outlined a journey map telling the backup admin's story — the highs and lows, organized into Touchpoints, Actions, Quotes, Experiences, Pain Points, and Opportunities. Some areas needed more room to breathe, so I built supplementary pieces too: a persona card, and a "day in the life" of a typical backup admin.</p>
+
+        <figure class="fig">
+          <img src="../assets/images/rubrik-diary/day-in-the-life.webp" alt="A 'Day in the Life' timeline from 8am to 5pm showing a backup admin's typical tasks, paired with quotes about checking compliance dashboards each morning and appreciating how little time Rubrik requires day to day.">
+          <figcaption><span class="fig-num">FIG. 05</span>"Day in the Life" of a Rubrik backup admin, built to complement the full journey map.</figcaption>
+        </figure>
+
+        <p>The study also surfaced interactions beyond SLAs and backups — into Reports and Errors — so I gave those areas their own detailed findings sections too. With everything built out in Figma, I put together a slide deck and presented it to immediate stakeholders, the design team, and a product-and-design all-hands — distilling a large pile of data into something easy to absorb and impossible to ignore.</p>
+
+        <blockquote class="pull">
+          It was crucial to convey the most important takeaways in a visual and engaging way.
+        </blockquote>
+
+        <p>To bring the user to life on screen, I embedded audio clips of participants describing their points of friction, pulled straight from their diary entries and closing calls.</p>
+
+        <blockquote class="pull">
+          Hearing the voice of the users — literally — helped build customer empathy among an audience who don't often interact with them directly.
+        </blockquote>
+
+        <p>Months after the share-out, product stakeholders were still referencing the project, which told me this research had staying power as a foundational artifact at Rubrik — not just a one-off readout.</p>
+
+        <h2>What I Learned</h2>
+        <p>This study was a unique learning experience for our users as much as for me. At the end, several participants said the diary gave them a chance to reflect on their own day and notice how they were actually spending their time at work — and that they appreciated feeling heard and valued by contributing to it.</p>
+
+        <blockquote class="pull">
+          "Thank you for your time and engagement, it's always appreciated. It's nice to feel like we play a part in changing things for the better."
+          <cite>Diary study participant, final entry</cite>
+        </blockquote>
+
+        <div class="outcome-banner">
+          <span class="eyebrow">Why It Mattered</span>
+          <h2>Two things a single interview can't give you.</h2>
+          <p>First, understanding users on a deeper level — and making them feel "real" to stakeholders who rarely interact with them directly. Second, stepping outside the bounds of a typical, time-boxed interview to see the wider role Rubrik plays in someone's actual working life. In B2B, it's easy to lose track of who your real user is, since the employer is the buyer — which makes early research like this even more important. A diary study is a cost- and time-effective way to build the right foundation for the people who will actually use what you ship.</p>
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <nav class="case-pagenav">
+      <div>
+        <span class="eyebrow">Previous — Case 01</span>
+        <a href="rubrik-saas-zero-to-one.html">← Rubrik SaaS Zero-to-One Research</a>
+      </div>
+      <div class="case-pagenav__next">
+        <span class="eyebrow">Next — Case 03</span>
+        <a href="nhi-research.html">Non-Human Identities Research →</a>
+      </div>
+    </nav>
+  </div>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__block">
+        <strong>Get in touch</strong>
+        <div class="footer__links">
+          <a href="mailto:jennyfromtheweb@gmail.com">jennyfromtheweb@gmail.com</a>
+          <a href="https://linkedin.com/in/jennyzli" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="footer__block">
+        <strong>Other Work</strong>
+        <div class="footer__links">
+          <a href="https://asiablooming.com/author/jenny/" target="_blank" rel="noopener">Writing — Asia Blooming ↗</a>
+          <a href="https://kpopconcerts.com/author/jennyl/" target="_blank" rel="noopener">Writing — K-Pop Concerts ↗</a>
+          <a href="https://www.operationshamrock.org/blog/how-scammers-get-your-personal-data" target="_blank" rel="noopener">Writing — Operation Shamrock ↗</a>
+          <a href="https://jennyfromtheweb.myportfolio.com/" target="_blank" rel="noopener">Photography Portfolio ↗</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Jenny Li</span>
+      <span>Built &amp; hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
