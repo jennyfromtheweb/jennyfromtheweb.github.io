@@ -34,7 +34,7 @@
       </div>
       <div class="redaction-rule redaction-rule--short" style="margin-bottom: 1.8rem;"></div>
       <h1 class="case-hero__title">Rubrik SaaS Zero-to-One Research</h1>
-      <p class="case-hero__dek">An end-to-end research study — spanning discovery, concept testing, and usability evaluation — that set the foundation for SaaS data protection in Rubrik Security Cloud, starting with Atlassian JIRA.</p>
+      <p class="case-hero__dek">An end-to-end research study spanning discovery, concept testing, and usability evaluation that set the foundation for SaaS data protection in Rubrik Security Cloud, starting with Atlassian JIRA.</p>
     </div>
   </section>
 
@@ -70,10 +70,10 @@
 
       <article class="case-content">
 
-        <p>With the growth of cloud products in the IT world, Rubrik began expanding its services to include data protection for SaaS software, starting with Atlassian's JIRA. While Rubrik's user persona had traditionally been the backup admin, we hypothesized that specialized SaaS products would actually be owned by a different, dedicated role — and we'd need to understand that user's needs to build the right product. As the sole researcher, I planned a zero-to-one study spanning discovery interviews, concept testing, and usability testing, so the team could confidently define an MVP for this new offering.</p>
+        <p>With the growth of cloud products in the IT world, Rubrik began expanding its services to include data protection for SaaS software, starting with Atlassian's JIRA. While Rubrik's user persona had traditionally been the backup admin, we hypothesized that specialized SaaS products would actually be owned by a different, dedicated role, and we'd need to understand that user's needs to build the right product. As the sole researcher, I planned a zero-to-one study including discovery interviews, concept testing, and usability testing and guided the team toward confidently defining an MVP for this new offering.</p>
 
         <h2>Research Objectives</h2>
-        <p>We needed to test our hypothesis about who actually owns JIRA workloads, and understand how — if at all — they were protecting that data today. Backup and recovery are the two core tasks of any data-protection product, so it was critical to pin down expectations for both.</p>
+        <p>We needed to test our hypothesis about who actually owns JIRA workloads, and understand how they were protecting that data today, if at all. Backup and recovery are the two core tasks of any data-protection product, so it was critical to pin down expectations for both.</p>
         <ul>
           <li><strong>Identify and understand the persona(s) responsible for Atlassian workloads</strong> — who creates the backup policies? Who recovers JIRA data? How do they protect it today, and what's hard about that?</li>
           <li><strong>Understand how users want to back up the different components in JIRA</strong> — what data types, at what granularity, at what frequency?</li>
@@ -83,10 +83,10 @@
         <h2>Phase 1 — Discovery Research</h2>
 
         <h3>Kick-off &amp; framing</h3>
-        <p>Like all my research projects, this began with a kickoff alongside the PM and designer — drafting business goals, research goals, hypotheses, recruitment plans, and a timeline together over a video call. During that conversation I learned the team was considering a new information architecture, so I proposed a mixed-method approach: card sorting to understand users' mental model of JIRA's components, plus a round of concept testing to weigh the existing IA against the proposed one.</p>
+        <p>I began with a kickoff alongside the PM and designer to align on business goals, research goals, hypotheses, recruitment plans, and a timeline. During that conversation I learned the team was considering a new information architecture, so I proposed a mixed-method approach: card sorting to understand users' mental model of JIRA's components, plus a round of concept testing to weigh the existing IA against the proposed one.</p>
 
         <h3>Internal expert interview &amp; recruitment</h3>
-        <p>I started by interviewing our own internal JIRA admin, with the PM and designer on the call, to build an initial picture of the space. Recruiting external participants was harder — this was a persona we'd never directly engaged before. I drew from our existing research panel and posted a callout on the Atlassian developer forums. Participants mostly came from technology and IT — companies where JIRA downtime has real business consequences — ranging from mid-size to large enterprises.</p>
+        <p>I started by interviewing our own internal JIRA admin, with the PM and designer on the call, to build an initial picture of the space. Recruiting external participants was harder as this was a persona we'd never directly engaged before. I drew from our existing research panel and posted a callout on the Atlassian developer forums. Participants mostly came from technology and IT (companies where JIRA downtime has real business consequences) ranging from mid-size to large enterprises.</p>
 
         <h3>Unmoderated card sorting</h3>
         <ul>
@@ -105,10 +105,10 @@
         </ul>
 
         <h2>Research Insights</h2>
-        <p>Findings and recommendations went out via a slide deck — first to product and design stakeholders, then an abbreviated version to engineering, to help that team understand the "why" behind what we were building.</p>
+        <p>Findings and recommendations went out via a slide deck. I first presented to product and design stakeholders, then delivered an abbreviated version to engineering, to help the team understand the "why" behind what we were building.</p>
 
         <h3>High-level findings</h3>
-        <p>Because this study ventured into territory the company knew little about, it mattered just as much to paint the bigger picture — the persona, the landscape — as it did to land specific recommendations.</p>
+        <p>Because this study ventured into territory the company knew little about, it mattered just as much to paint the bigger picture (mainly the persona and current landscape) as it did to land specific recommendations.</p>
 
         <figure class="fig">
           <img src="../assets/images/rubrik-saas/state-of-jira-customers-today.webp" alt="Slide titled 'The State of JIRA for Customers Today' listing how customers currently protect JIRA data, including Atlassian's trash and data resilience policy, manual zip backups, and restricted permissions.">
@@ -126,7 +126,7 @@
         </figure>
 
         <h3>Card-sorting findings</h3>
-        <p>A pivot-table heat map in Google Sheets showed where users agreed — and disagreed — on how to categorize each JIRA component. The cards with the most disagreement (highlighted) were mostly components tied to both settings and projects, so they naturally spanned both categories.</p>
+        <p>A pivot-table heat map in Google Sheets showed where users agreed and disagreed on how to categorize each JIRA component. The cards with the most disagreement (highlighted) were mostly components tied to both settings and projects, so they naturally spanned both categories.</p>
 
         <figure class="fig">
           <img src="../assets/images/rubrik-saas/card-sorting-heatmap.webp" alt="Heat map pivot table showing how 9 participants categorized JIRA components like Issues, Workflows, and Permission Schemes across categories such as Global Settings, Issues, and Projects.">
@@ -134,14 +134,14 @@
         </figure>
 
         <h3>Concept testing findings</h3>
-        <p>The biggest change on the table was a shift from an object-focused information architecture to a task-focused one. The card sort had already hinted that some components lacked a clear category — suggesting users might struggle to locate them in an object-focused experience. I wanted to test the viability of a task-focused alternative, letting JIRA admins jump straight into a workflow based on what they're trying to accomplish, rather than hunting for the object first.</p>
+        <p>The biggest change on the table was a shift from an object-focused information architecture to a task-focused one. The card sort had already hinted that some components lacked a clear category, suggesting users might struggle to locate them in an object-focused experience. I wanted to test the viability of a task-focused alternative, letting JIRA admins jump straight into a workflow based on what they're trying to accomplish, rather than hunting for the object first.</p>
 
         <figure class="fig">
           <img src="../assets/images/rubrik-saas/nav-option-comparison.webp" alt="Two navigation bar mockups side by side: Option 1, task-focused, with tabs Dashboard, Backup, Restore, Events; Option 2, object-focused, with tabs Dashboard, Projects, Settings, Events.">
           <figcaption><span class="fig-num">FIG. 05</span>The two navigation concepts tested: task-focused (left) vs. object-focused (right).</figcaption>
         </figure>
 
-        <p>I kept the concept tests focused on high-level IA and navigation rather than specific workflows — asking where users expected to recover different components (Projects, Issues, Workflows) and where to create backup policies. Each session ended by asking users which design they preferred, not just to tally votes, but to understand what worked — and didn't — about each.</p>
+        <p>I kept the concept tests focused on high-level IA and navigation rather than specific workflows — asking where users expected to recover different components (Projects, Issues, Workflows) and where to create backup policies. Each session ended by asking users which design they preferred, not just to tally votes, but to understand what worked versus what didn't.</p>
 
         <h3>Key findings</h3>
         <figure class="fig">
@@ -150,7 +150,7 @@
         </figure>
 
         <h3>Summary</h3>
-        <p>JIRA's ecosystem is heavily relational — a change to one object can ripple into many others. As a result:</p>
+        <p>JIRA's ecosystem is heavily relational, which means a change to one object can cause a cascading effect. As a result:</p>
         <ul>
           <li>Users' mental categorization of data types isn't well defined</li>
           <li>Admins may not know the full scope of impact when a change or deletion occurs</li>
@@ -169,7 +169,7 @@
         <div class="outcome-banner">
           <span class="eyebrow">Product Impact — Phase 1</span>
           <h2>SaaS workloads got their own room.</h2>
-          <p>Working alongside the PM, designer, and lead engineer over the following weeks, we landed on splitting all SaaS workloads into a dedicated space within the Rubrik application — rather than folding them into traditional backup workflows — with an IA built to scale to future SaaS integrations beyond JIRA.</p>
+          <p>Working alongside the PM, designer, and lead engineer over the following weeks, we landed on splitting all SaaS workloads into a dedicated space within the Rubrik application rather than folding them into traditional backup workflows. This way, the IA was built to scale to future SaaS integrations beyond JIRA.</p>
         </div>
 
         <div class="fig-pair">
@@ -184,7 +184,7 @@
         </div>
 
         <h2>Phase 2 — Evaluative Research</h2>
-        <p>With the design taking shape, I planned a second phase: usability testing across the main flows — Recovery, Analysis, and Backup. Each needed more than a typical one-hour session, so I ran two 1-hour sessions per participant. To recruit, I created a "JIRA Specialist Cohort" — a mix of returning and new participants invited into a more selective, multi-session group, each session closing with a System Usability Scale (SUS) survey.</p>
+        <p>With the design taking shape, I planned a second phase: usability testing across the main flows of Recovery, Analysis, and Backup. Each needed more than a typical one-hour session, so I ran two 1-hour sessions per participant. To recruit, I created a "JIRA Specialist Cohort", a mix of returning and new participants invited into a more selective, multi-session group, each session closing with a System Usability Scale (SUS) survey.</p>
 
         <h3>Session 1 — Recovery &amp; Analysis</h3>
         <p class="eyebrow eyebrow--muted" style="display:block; margin-bottom: 0.8rem;">Objectives: recovering multiple issues, recovering a setting, and using Analyze to investigate a point-in-time problem.</p>
@@ -219,7 +219,7 @@
         </div>
 
         <h3>Research insights</h3>
-        <p>Since I'd worked closely with the PM and designer throughout, I ran the share-out as an interactive FigJam session rather than a static deck — screenshotting each step of the flow and annotating it with friction points and user quotes, color-coded by type (question, recommendation, discussion point, resolution). I walked through each flow live, facilitating discussion and capturing notes in real time. As with Phase 1, I followed with a shorter, more technical share-out for engineering.</p>
+        <p>Since I'd worked closely with the PM and designer throughout, I ran the share-out as an interactive FigJam session rather than a static deck and took screenshots of each step of the flow. I annotated each screen with friction points and user quotes, color-coded by type (question, recommendation, discussion point, resolution). I walked through the flows live, facilitating discussion and capturing notes in real time. As with Phase 1, I followed with a shorter, more technical share-out for engineering.</p>
 
         <figure class="fig">
           <img src="../assets/images/rubrik-saas/figjam-annotated-review.webp" alt="Annotated FigJam board reviewing Onboarding, Monitor, and Analyze v2 mockups with color-coded sticky notes for questions, recommendations, and user quotes.">
@@ -270,7 +270,6 @@
     </div>
     <div class="footer__bottom">
       <span>© 2026 Jenny Li</span>
-      <span>Built &amp; hosted on GitHub Pages</span>
     </div>
   </div>
 </footer>

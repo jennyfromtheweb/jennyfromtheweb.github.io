@@ -33,14 +33,10 @@
           <h1 class="hero__headline">
             Hi, I'm Jenny —<br>
             a mission-driven<br>
-            <span class="redaction-wrap">
-              <em>UX&nbsp;researcher</em><span class="redaction-bar" aria-hidden="true"></span>
-            </span>
+            <em>UX&nbsp;Researcher</em>
           </h1>
         </div>
-        <div class="hero__role">
-          Berkeley EECS <span class="path-sep">→</span> Software Engineer <span class="path-sep">→</span> UX Technologist <span class="path-sep">→</span> Product Manager <span class="path-sep">→</span> User Researcher
-        </div>
+        <div class="hero__role"></div>
       </div>
     </div>
   </section>
@@ -51,19 +47,25 @@
       <div class="redaction-rule redaction-rule--short" style="margin-bottom: 2.5rem;"></div>
       <div class="intro__grid">
         <div>
-          <p>After graduating with a degree in Electrical Engineering and Computer Science at UC Berkeley, I started working as a software engineer — but I soon realized the part of building products I loved most was figuring out how to make them genuinely help people.</p>
-          <p>In search of the chance to shift my work from writing code to advocating for users, I became a UX Technologist (bridging engineering and design), then a Product Manager, before becoming one of the first User Researchers at Rubrik. With each role, I brought the voice of the user further into the conversation — whether that meant building empathy through persona research and journey mapping, feeding insights into product strategy, or facilitating design-thinking workshops.</p>
-          <p>In the enterprise world, I specialized in translating technical complexity into human-centered product strategy, launching zero-to-one initiatives in ambiguous problem spaces. Today, I'm channeling that expertise toward social impact — using digital strategy, systems thinking, and mixed-methods research to help mission-driven organizations tackle complex problems.</p>
+          <p>I'm a mission-driven UX Researcher and former software engineer. I lean on my technical fluency and storytelling skills to build technology that genuinely helps people. After earning my degree in Electrical Engineering and Computer Science at UC Berkeley, I started out as a software engineer developing Android apps, but I soon realized the part of building products I loved most was making sure they served the people who used them.</p>
+          <p>That pull toward users moved me from engineering into UX: I became a UX Technologist (bridging engineering and design), then a Product Manager at Workday, before joining Rubrik as one of its first User Researchers. Across these roles I've led mixed-methods research (including interviews, diary studies, usability testing, and journey mapping) to impact product strategy and design decisions, launching zero-to-one initiatives in ambiguous problem spaces.</p>
+          <p>Today I focus that experience on social impact, partnering with nonprofits and mission-driven organizations to tackle complex problems through user research, digital strategy, and systems thinking.</p>
+          <p><i>Current Projects: </i>I'm leading a website redesign for a nonprofit supporting survivors of trafficking and abuse, and shaping early research for a reading app for young children.</p>
         </div>
         <aside class="intro__aside">
           <strong>Based in</strong>
           San Francisco Bay Area
           <br><br>
-          <strong>Industries</strong>
-          Enterprise SaaS · Cybersecurity · Nonprofit / Social Impact
-          <br><br>
           <strong>Methods</strong>
           Interviews · Diary Studies · Card Sorting · Concept &amp; Usability Testing · Journey Mapping · Workshop Facilitation
+          <br><br>
+          <strong>Tools</strong>
+          <span class="tool-group"><span class="tool-group__label">Research</span> Dovetail · Qualtrics · MixPanel</span>
+          <span class="tool-group"><span class="tool-group__label">Design</span> Figma · Canva · Lightroom · Photoshop</span>
+          <span class="tool-group"><span class="tool-group__label">AI</span> Gemini · NotebookLM · Claude</span>
+          <br><br>
+          <strong>Education</strong>
+          B.S. Electrical Engineering &amp; Computer Science, UC Berkeley
         </aside>
       </div>
     </div>
@@ -74,7 +76,6 @@
     <div class="wrap">
       <div class="index-heading">
         <h2 class="eyebrow">Selected Case Studies</h2>
-        <span class="eyebrow eyebrow--muted">04 Files</span>
       </div>
 
       <div class="case-list">
@@ -127,7 +128,7 @@
             <span class="case-row__title">Website Redesign for JABEL</span>
             <span class="case-row__desc">A pro-bono UX overhaul for a grassroots nonprofit, rebuilding its site around survivors, donors, and the people trying to help.</span>
             <ul class="tags">
-              <li class="tag">Heuristic Evaluation</li>
+              <li class="tag">UX Evaluation</li>
               <li class="tag">Persona Workshop</li>
               <li class="tag">Affinity Mapping</li>
               <li class="tag">Information Architecture</li>
@@ -154,7 +155,7 @@
           <a href="https://linkedin.com/in/jennyzli" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
       </div>
-      <div class="footer__block">
+      <div class="footer__block footer__block--right">
         <strong>Other Work</strong>
         <div class="footer__links">
           <a href="https://asiablooming.com/author/jenny/" target="_blank" rel="noopener">Writing — Asia Blooming ↗</a>
@@ -166,10 +167,69 @@
     </div>
     <div class="footer__bottom">
       <span>© 2026 Jenny Li</span>
-      <span>Built &amp; hosted on GitHub Pages</span>
     </div>
   </div>
 </footer>
 
+<script>
+(function () {
+  const el = document.querySelector('.hero__role');
+  if (!el) return;
+
+  const parts = [
+    { text: 'Berkeley EECS ' },
+    { text: '→', sep: true },
+    { text: ' Software Engineer ' },
+    { text: '→', sep: true },
+    { text: ' UX Technologist ' },
+    { text: '→', sep: true },
+    { text: ' Product Manager ' },
+    { text: '→', sep: true },
+    { text: ' User Researcher' },
+  ];
+
+  const sequence = [];
+  for (const part of parts) {
+    if (part.sep) {
+      sequence.push({ char: part.text, sep: true });
+    } else {
+      for (const ch of part.text) {
+        sequence.push({ char: ch });
+      }
+    }
+  }
+
+  const cursor = document.createElement('span');
+  cursor.className = 'typewriter-cursor';
+  cursor.textContent = '|';
+  el.appendChild(cursor);
+
+  let i = 0;
+
+  function type() {
+    if (i >= sequence.length) {
+      setTimeout(() => cursor.remove(), 900);
+      return;
+    }
+    const item = sequence[i++];
+    if (item.sep) {
+      const span = document.createElement('span');
+      span.className = 'path-sep';
+      span.textContent = item.char;
+      el.insertBefore(span, cursor);
+    } else {
+      const prev = cursor.previousSibling;
+      if (prev && prev.nodeType === Node.TEXT_NODE) {
+        prev.textContent += item.char;
+      } else {
+        el.insertBefore(document.createTextNode(item.char), cursor);
+      }
+    }
+    setTimeout(type, 55);
+  }
+
+  setTimeout(type, 300);
+})();
+</script>
 </body>
 </html>

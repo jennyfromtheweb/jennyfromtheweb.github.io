@@ -34,7 +34,7 @@
       </div>
       <div class="redaction-rule redaction-rule--short" style="margin-bottom: 1.8rem;"></div>
       <h1 class="case-hero__title">Non-Human Identities (NHIs) Research</h1>
-      <p class="case-hero__dek">Strategic discovery research proving that non-human identities — service accounts, API keys, certificates — were a growing, under-addressed risk, and pointing Rubrik toward exactly where to act first.</p>
+      <p class="case-hero__dek">Strategic discovery research proving that non-human identities like service accounts, API keys, and certificates are a growing, under-addressed risk, and pointing Rubrik toward where to act first.</p>
     </div>
   </section>
 
@@ -63,15 +63,15 @@
 
       <article class="case-content">
 
-        <p>In 2025, Rubrik had launched its first identity-protection products for human identities — but anecdotes from earlier user interviews kept pointing at a second, less-examined risk: non-human identities (NHIs). The product manager needed evidence to justify investing here, so I launched a study to answer two questions: <strong>how big a problem are NHIs, really</strong> — and <strong>what could Rubrik actually do about it?</strong> As the sole researcher, I sat on the strategic team alongside product, helping shape both the direction and the strategy for how Rubrik approached NHI data protection.</p>
+        <p>In 2025, Rubrik had launched its first identity-protection products for human identities, but anecdotes from earlier user interviews kept pointing at a second, less-examined risk: non-human identities (NHIs). The product manager needed evidence to justify investing in this space, so I launched a study to answer two questions: <strong>how big a problem are NHIs? </strong> — and <strong>what could Rubrik actually do about it?</strong> As the sole researcher, I sat on the strategic team alongside product, helping shape both the direction and the strategy for how Rubrik approached NHI data protection.</p>
 
         <h2>Research Methodology</h2>
-        <p>NHIs were an evolving space at the time, with no clean ownership boundary across roles — so I recruited based on responsibility, not title. In total, I ran <strong>10 user interviews</strong>: two internal employees who own NHI risk at Rubrik (a Staff Security Identity Engineer and a Threat Hunting &amp; Detection Engineer), and eight external users across IT/Cloud and Security/Compliance functions, at companies ranging from large enterprises to mid-sized businesses.</p>
+        <p>NHIs were an evolving space at the time, with no clean ownership boundary across roles so I recruited based on responsibility, not title. In total, I ran <strong>10 user interviews</strong>: two internal employees who own NHI risk at Rubrik (a Staff Security Identity Engineer and a Threat Hunting &amp; Detection Engineer), and eight external users across IT/Cloud and Security/Compliance functions, at companies ranging from large enterprises to mid-sized businesses.</p>
 
         <h2>Answering the Core Questions</h2>
 
         <h3>What do users actually consider an NHI?</h3>
-        <p>This had to come first, before anything else could move forward. Users understand the term "non-human identity" — but rarely use it themselves, reaching instead for the umbrella term <strong>"service account."</strong> In practice, they define an NHI as two things together: an entity that lets applications talk to each other without a human in the loop (service principals, managed identities, agents, certificates), and the secrets tied to it (passwords, keys, tokens).</p>
+        <p>Users understand the term "non-human identity" but often use the umbrella term <strong>"service account"</strong> instead. In practice, they define an NHI as two things together: an entity that lets applications talk to each other without a human in the loop (service principals, managed identities, agents, certificates), and the secrets tied to it (passwords, keys, tokens).</p>
         <p>Users don't rank NHI types by what they <em>are</em> — they rank them by <strong>risk level.</strong> The more connections and privileges an NHI has into critical applications, the larger its attack surface, and the more urgently it needs attention.</p>
 
         <h3>How big a problem are NHIs, really?</h3>
@@ -82,16 +82,16 @@
         </ul>
         <p>And three things are compounding how overwhelmed users feel about it:</p>
         <ul>
-          <li><strong>Lack of visibility</strong> — NHIs often get created without an approval process, or spin up automatically from a workflow, with API secrets shared around with no other team the wiser. The result is a sprawl of unknown, untracked entities that's simply not feasible for IAM or Security teams to get their arms around.</li>
-          <li><strong>No centralized inventory</strong> — especially painful for companies migrating legacy infrastructure to the cloud, trying to get one view of all their NHIs and what they own. Without knowing who owns an NHI and what it can touch, there's no way to act on it responsibly.</li>
-          <li><strong>Lifecycle management, with no end</strong> — tracking creation, rotating secrets, deciding when to decommission: all of it is manual today, and none of it ever really stops.</li>
+          <li><strong>Lack of visibility</strong> — NHIs often get created without an approval process, or spin up automatically from a workflow, with API secrets shared around with no other team the wiser. The result is a sprawl of unknown, untracked entities that's challenging for IAM or Security teams to understand, much less manage.</li>
+          <li><strong>No centralized inventory</strong> — especially painful for companies migrating legacy infrastructure to the cloud, trying to get one view of all their NHIs and what they own. Without knowing who owns an NHI and what it can touch, they can't act on it responsibly.</li>
+          <li><strong>Lifecycle management</strong> — tracking creation, rotating secrets, and decommissioning are all tasks that require manual work in large volumes</li>
         </ul>
 
         <h2>Using Frameworks to Communicate Insights</h2>
-        <p>This was a large, abstract space — so I leaned on simple frameworks to make the findings land clearly with stakeholders and keep the conversation moving.</p>
+        <p>Because this was a large, abstract space, I opted for creating simple frameworks to make the findings land clearly with stakeholders.</p>
 
         <h3>Hierarchy of NHI needs</h3>
-        <p>Almost every issue people raised traced back to one root cause: no centralized inventory of their NHIs. Even the users who felt they had a decent handle on their NHIs still struggled to manage them — worried, for instance, about NHIs holding more permissions than they should. And given the sheer volume of NHIs (especially with AI driving more API key usage), everyone wanted intelligent tooling to catch issues early and automate the fix.</p>
+        <p>Almost every issue people raised traced back to one root cause: no centralized inventory of their NHIs. Even the users who felt they had a decent handle on their NHIs still struggled to manage them. Some of them were worried about NHIs holding more permissions than they should, and given the sheer volume of NHIs, everyone wanted intelligent tooling to catch issues early and automate the fix.</p>
 
         <figure class="fig">
           <img src="../assets/images/nhi-research/hierarchy-of-needs-pyramid.webp" alt="Three-tier pyramid: Centralized Inventory at the base, Lifecycle Management & Governance in the middle, Posture Management & Remediation at the top, each with supporting bullet points.">
@@ -99,7 +99,7 @@
         </figure>
 
         <h3>How Rubrik can help</h3>
-        <p>Using that same pyramid, I mapped where Rubrik could realistically show up at each level. The discussion that followed surfaced a key strategic insight for the team: <strong>centralized inventory is table-stakes</strong> — necessary, but not where Rubrik wins. The real opportunity, for most customers at this stage of their NHI journey, was <strong>Lifecycle Management &amp; Governance.</strong></p>
+        <p>Using that same pyramid, I mapped where Rubrik could realistically address each level. As we discussed Rubrik's right ot play, this led the team to realize that a <strong>centralized inventory is table-stakes</strong> but even though it was necessary, it wouldn't be where Rubrik would stand out amongst competitors. The real opportunity for most customers at this stage of their NHI journey, was <strong>Lifecycle Management &amp; Governance.</strong></p>
 
         <figure class="fig">
           <img src="../assets/images/nhi-research/pyramid-how-rubrik-can-help.webp" alt="The same three-tier pyramid annotated with how Rubrik could address each level: understanding what's out there, operationalizing processes and enforcing policies, and proactively discovering and mitigating risk.">
@@ -107,7 +107,7 @@
         </figure>
 
         <h2>User Need Insights</h2>
-        <p>For each need, I explained why it was a real frustration today, what it actually looks like inside a user's environment, and brought in their own words — partly to make the recommendation land, partly because the emotional undertone (overwhelmed, uncertain) was itself a finding.</p>
+        <p>For each need, I explained why it was a real frustration today, what it  looks like inside a user's environment, and showed real user frustrations involving dealing with NHIs.</p>
 
         <figure class="fig">
           <img src="../assets/images/nhi-research/discovering-inventorying-nhis.webp" alt="Slide on discovering and inventorying NHIs, listing desired metadata — Owner, Last Accessed/Frequency of Usage, and Permissions/API calls/Associated Applications — with reasoning for each.">
@@ -155,7 +155,7 @@
         <div class="outcome-banner">
           <span class="eyebrow">Strategic Impact</span>
           <h2>A resounding yes — and a clear place to start.</h2>
-          <p>This research gave the team more than validation that NHIs were worth pursuing. It gave them a specific, defensible place to focus first: not the obvious "build an inventory" instinct, but the lifecycle management and governance layer sitting just above it — where Rubrik's existing strengths in policy and automation could actually move the needle for customers.</p>
+          <p>This research gave the team validation that NHIs were worth pursuing and also led to the strategic insight that lifecycle management and governance were where Rubrik's existing strengths in policy and automation could actually move the needle for customers.</p>
         </div>
 
       </article>
@@ -199,7 +199,6 @@
     </div>
     <div class="footer__bottom">
       <span>© 2026 Jenny Li</span>
-      <span>Built &amp; hosted on GitHub Pages</span>
     </div>
   </div>
 </footer>

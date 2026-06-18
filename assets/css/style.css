@@ -201,6 +201,14 @@ section { padding: 4.5rem 0; }
   font-style: italic;
   color: var(--indigo);
 }
+.typewriter-cursor {
+  color: var(--ink);
+  font-weight: 300;
+  animation: blink-cursor 0.7s step-end infinite;
+}
+@keyframes blink-cursor {
+  50% { opacity: 0; }
+}
 .hero__role {
   font-family: var(--font-mono);
   font-size: 0.95rem;
@@ -220,7 +228,7 @@ section { padding: 4.5rem 0; }
 }
 .intro__grid {
   display: grid;
-  grid-template-columns: 1fr 240px;
+  grid-template-columns: 7fr 3fr;
   gap: 3rem;
 }
 .intro p {
@@ -247,6 +255,20 @@ section { padding: 4.5rem 0; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.7rem;
+}
+.tool-group {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.tool-group__label {
+  color: var(--ink-soft);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  padding-top: 0.05em;
 }
 @media (max-width: 860px) {
   .intro__grid { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -337,6 +359,7 @@ section { padding: 4.5rem 0; }
   margin-bottom: 0.8rem;
 }
 .footer__links { display: flex; flex-direction: column; gap: 0.5rem; }
+.footer__block--right { padding-left: 4rem; }
 .footer__links a {
   text-decoration: none;
   font-size: 0.95rem;
