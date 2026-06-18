@@ -5,19 +5,19 @@
 
 :root {
   /* ---- color tokens ---- */
-  --paper:        #F1EEE5;
-  --paper-card:   #FAF8F2;
-  --ink:          #15171C;
-  --ink-soft:     #46443E;
-  --ink-faint:    #6E6B62;
-  --indigo:       #2C3570;
-  --indigo-deep:  #1B2150;
-  --ochre:        #B8862E;
-  --ochre-soft:   #E4C988;
-  --mist:         #DDD6C5;
-  --line:         rgba(21, 23, 28, 0.14);
-  --line-soft:    rgba(21, 23, 28, 0.08);
-  --redaction:    #121319;
+  --paper:        #FAFAF7;
+  --paper-card:   #FFFFFF;
+  --ink:          #16181D;
+  --ink-soft:     #44474D;
+  --ink-faint:    #74736E;
+  --indigo:       #D17872;
+  --indigo-deep:  #B2564F;
+  --ochre:        #2C7A70;
+  --ochre-soft:   #8FC2BA;
+  --mist:         #E7E6E1;
+  --line:         rgba(22, 24, 29, 0.14);
+  --line-soft:    rgba(22, 24, 29, 0.08);
+  --redaction:    #16181D;
 
   /* ---- type ---- */
   --font-display: 'Lexend', system-ui, sans-serif;
@@ -148,7 +148,7 @@ li { margin-bottom: 0.4em; }
 .site-nav { display: flex; gap: 1.75rem; }
 .site-nav a {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
@@ -249,7 +249,7 @@ section { padding: 4.5rem 0; }
 }
 .intro__aside strong {
   display: block;
-  color: var(--ink);
+  color: var(--indigo);
   font-weight: 500;
   margin-bottom: 0.6rem;
   letter-spacing: 0.08em;
