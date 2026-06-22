@@ -276,6 +276,38 @@ section { padding: 4.5rem 0; }
 }
 
 /* ---------------------------------------------------------------
+   Working principles (home — how I work)
+   --------------------------------------------------------------- */
+.principles { padding-bottom: 3.5rem; }
+.principles__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 3rem;
+  border-top: 1px solid var(--ink);
+  padding-top: 2.5rem;
+}
+.principle__num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ochre);
+  margin-bottom: 0.7rem;
+}
+.principle__title {
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+.principle__desc {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .principles__grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* ---------------------------------------------------------------
    Case file index (home — list of case studies)
    --------------------------------------------------------------- */
 .index-heading {
