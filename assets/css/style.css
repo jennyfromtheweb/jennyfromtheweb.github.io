@@ -286,12 +286,15 @@ section { padding: 4.5rem 0; }
   border-top: 1px solid var(--ink);
   padding-top: 2.5rem;
 }
-.principle__num {
+.principle__icon {
   display: block;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
   color: var(--ochre);
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+.principle__icon svg {
+  width: 32px;
+  height: 32px;
+  display: block;
 }
 .principle__title {
   font-size: 1.2rem;
